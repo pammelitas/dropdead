@@ -1,0 +1,14 @@
+/* Media Queries */
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+    .bg-imageindex {
+        background-image: none;
+        background: rgb(84,73,85);
+background: linear-gradient(180deg, rgba(84,73,85,1) 0%, rgba(174,162,168,1) 49%, rgba(232,225,227,1) 100%) !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1800px) {
+    .map{
+        display: none;
+    }
+}

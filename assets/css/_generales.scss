@@ -1,0 +1,121 @@
+
+/* Body */
+body{
+    font-family:'Raleway', sans-serif;
+}
+
+/* Nav Bar */
+nav{
+    font-family: 'Horizon', sans-serif;
+    font-size: 1.2rem;
+    .navbar-brand img{
+        animation: bounce 1s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .nav-item a{
+        color: $nav-bar-color;
+        &:hover{
+            color: $hover-color;
+            &:active{
+                color: $active-color;
+            }
+        }
+    }
+    .dropdown-item:hover{
+        color: $hover-color;
+        background-color: rgb(245, 245, 245);
+        &:active{
+            color: $active-color;
+            background-color: rgb(245, 245, 245);
+        }
+    }
+}
+
+/* Input Group Index Section */
+.input-group{
+    margin-top: 67vh;
+    margin-left: 1vh;
+    width: 96vw;
+    height: 5vh;
+    button{
+        height: 7vh;
+    }
+}
+
+
+/* Buttons Section */
+.btn{
+background-color: $btn-color;
+color: white;
+font-family: 'Horizon';
+&:hover{
+    transition: all 1s ease 0s;
+    background-color: white;
+    color: $hover-color;
+    cursor: pointer;
+    &:active{
+        background-color: $active-color;
+        color: #fff;
+    }
+    }
+}
+
+
+.cancel, .size{
+    background-color: white;
+    color: $btn-color;
+    border: solid 1px $btn-color;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    background: $bg-white;
+    height: 80px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+    .widthFooter {
+        margin-top: 20px;
+        .redes {
+            display: inline-block;
+            .bi-facebook {
+                /* font-size: 30px; */
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: $icons-color;
+                &:hover{
+                    color: #3b5998;
+                    transition: all 1s ease 0s;
+                }
+              }
+              .bi-twitter {
+                /* font-size: 30px; */
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: $icons-color;
+                &:hover{
+                    color: #25b9d3;
+                    transition: all 1s ease 0s;
+                }
+              }
+              .bi-instagram {
+                /* font-size: 30px; */
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: $icons-color;
+                &:hover{
+                    transition: all 1s ease 0s;
+                    color: rgb(219,21,131);
+                    color: linear-gradient(90deg, rgba(219,21,131,1) 0%, rgba(159,66,66,1) 49%, rgba(235,160,55,1) 100%);
+                }
+              }
+          }
+      }
+  }
