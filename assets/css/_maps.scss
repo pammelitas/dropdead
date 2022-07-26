@@ -1,0 +1,13 @@
+$mapRedes:(facebook: #3b5998, instagram: rgb(219, 21, 131), twitter: #25b9d3);
+
+@each $red, $color in $mapRedes{
+    .#{$red}{
+        color: $color;
+    }
+}
+
+$mapH2:(color: $hover-color);
+
+.card-text-p{
+    color: map-get($map: $mapH2, $key: color);
+}

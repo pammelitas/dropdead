@@ -50,11 +50,13 @@ nav{
 background-color: $btn-color;
 color: white;
 font-family: 'Horizon';
+border: none;
 &:hover{
     transition: all 1s ease 0s;
     background-color: white;
     color: $hover-color;
     cursor: pointer;
+    border: solid 1px $hover-color;
     &:active{
         background-color: $active-color;
         color: #fff;
@@ -119,3 +121,7 @@ footer {
           }
       }
   }
+
+
+
+    

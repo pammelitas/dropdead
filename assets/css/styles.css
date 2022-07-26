@@ -56,18 +56,20 @@ nav .dropdown-item:hover:active {
 }
 
 /* Buttons Section */
-.btn {
+.btn, .btn-join {
   background-color: #544955;
   color: white;
   font-family: "Horizon";
+  border: none;
 }
-.btn:hover {
+.btn:hover, .btn-join:hover {
   transition: all 1s ease 0s;
   background-color: white;
   color: #aea2a8;
   cursor: pointer;
+  border: solid 1px #aea2a8;
 }
-.btn:hover:active {
+.btn:hover:active, .btn-join:hover:active {
   background-color: #463547;
   color: #fff;
 }
@@ -188,4 +190,27 @@ footer .widthFooter .redes .bi-instagram:hover {
   .map {
     display: none;
   }
+}
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: rgb(219, 21, 131);
+}
+
+.twitter {
+  color: #25b9d3;
+}
+
+.card-text-p {
+  color: #aea2a8;
+}
+
+/* MIXINS */
+.card-title-clothing, .h2 {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  -webkit-text-decoration-color: #000000;
+          text-decoration-color: #000000;
 }/*# sourceMappingURL=styles.css.map */
